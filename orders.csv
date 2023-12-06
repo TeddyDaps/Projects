@@ -1,0 +1,10 @@
+id,name,address,descr,date,cost,delivered,clerk
+
+1,kostas,Agia Paraskeyh,MAC-BOOK,27/08/2023,1325.45,1,sue
+2,hlias,Menidi,Iphone 14 Pro MAX,02/12/2023,1699.89,0,ann
+3,giannhs,Peiraia,Lonsdale Jacket,18/03/2022,1927,1,ann
+4,petros,Athina,Bluetooth Akoustika,22/05/2023,789,0,sue
+5,theofilos,Kaminia,Gyalia hlioy,13/12/2022,1927,1,sue
+6,theofilos,Kaminia,kapelo karl kani,13/12/2022,1200,1,ann
+7,mpoumer,petroupoli,fouter nike,02/12/2023,67,0,ann
+8,theofilos,Kaminia,Fouter,04/12/2023,68.75,0,sue
