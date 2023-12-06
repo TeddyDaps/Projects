@@ -30,8 +30,8 @@ Number of orders on a given day
 Total number of delivered orders
 Total amount of orders from a specific customer
 Total amount of orders on a given day
-Managers can also request data export into a file (csv format) for the following:
 
+Managers can also request data export into a file (csv format) for the following:
 Customer names
 Number of orders entered by each clerk
 All orders that have been registered
