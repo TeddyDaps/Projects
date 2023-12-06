@@ -15,4 +15,3 @@ def is_valid(username,password): # Executes an authentication process utilizing 
             if row['username'] == username and row['password'] == password:
                 return True
         return False
-

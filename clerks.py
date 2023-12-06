@@ -4,9 +4,9 @@ import csv
 
 
 
+
 def new_orders():
     
-    username=(input("Your username: "))
     name=(input("Customer's name: "))
     address=input("Customer's address: ")
     desc=input("Description: ")
@@ -18,9 +18,9 @@ def new_orders():
     id=len(orders_list)+1
     file.close()
     file = open("orders.csv",'a', newline='\n')
-    file.write(str(id)+','+name+','+address+','+desc+','+date+','+cost+','+'0'','+username)
+    file.write(str(id)+','+name+','+address+','+desc+','+date+','+cost+','+'0'',')
     print("The addition of a new order has been successfully finalized.")
-    file.close()
+    file.close()    
     
 
 
