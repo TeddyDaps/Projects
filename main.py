@@ -7,6 +7,7 @@ from menus import manager_menu,delivery_menu,clerk_menu
 from manager import total_orders_per_customer,total_daily_orders,total_delivered_orders,total_income_per_customer,\
 total_daily_income
 from main_fuctions import login,is_valid
+from delivery import CompleteDelivery
 
 
 
@@ -71,6 +72,22 @@ while login_attempts < max_attempts:
                     if choice == '0':
                         print("Concluding the program respectfully.") # Displaying proper message
                         break
+                if role == 'delivery':
+                    choice = delivery_menu()
+                    if choice == '1':
+                        pass
+                        
+                        #CompleteDelivery()
+                    elif choice == '2':
+                        undelivered_orders()
+                        
+                        
+                        
+                    elif choice == '0':
+                        print("Concluding the program respectfully.")
+                        break
+
+        
         break
     else:
         print("The provided username or password is incorrect or invalid.") # Displaying right message

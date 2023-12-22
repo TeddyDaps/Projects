@@ -33,6 +33,7 @@ def delivery_menu() : #Displaying derilvery's menu.
     print()
     print("---DELIVERY MENU---")
     print("1. Finalize Order")
+    print("2. View Undelivered Orders")
     print("0. Exit the application")
     print("--------------------")
     choice=input("Option: ")
