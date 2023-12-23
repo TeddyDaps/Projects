@@ -5,9 +5,8 @@ import csv  # Importing the CSV module for the purpose of managing CSV files in 
 from clerks import new_orders,undelivered_orders 
 from menus import manager_menu,delivery_menu,clerk_menu
 from manager import total_orders_per_customer,total_daily_orders,total_delivered_orders,total_income_per_customer,\
-total_daily_income
+total_daily_income, extracting_names, extract_order_each_cleck, extract_all_orders
 from main_fuctions import login,is_valid
-#from delivery import CompleteDelivery
 
 
 
@@ -54,12 +53,15 @@ while login_attempts < max_attempts:
                     if choice == '5': # Choice 5 Total Daily Income
                         total_daily_income()
                         print()
-                    if choice == '6': # Choice 6
-                        pass
-                    if choice == '7': # Choice 7
-                        pass
+                    if choice == '6': # Choice 6 Extracting names in a list (.txt file)
+                        extracting_names()
+                        print()
+                    if choice == '7': # Choice 7 Extracting orders of each Clerk by their name
+                        extract_order_each_cleck()
+                        print()
                     if choice == '8': # Choice 8
-                        pass
+                        extract_all_orders()
+                        print()
                     if choice == '0': # Choice 0(Exiting the program)
                         print("Concluding the program respectfully.")
                         break
