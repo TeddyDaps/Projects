@@ -4,14 +4,11 @@ import csv # Importing the csv module for handling CSV files
 
 def total_orders_per_customer(): 
 
-    
-    name=str(input("Enter customer's name: ")) # Asking for customer's name input:
-
-    
-    file=open("orders.csv", "r") # Open the proper .csv file (in read mode BY DEFAULT)
+    file=open('orders.csv' 'r') # Open the proper .csv file (in read mode BY DEFAULT)
     reader=csv.DictReader(file)
     counter = 0
     orders=[] # Creating a new list so we can add the orders inside 
+    name=str.lower(input("Enter customer's name: ")) # Asking for customer's name input:
     for row in reader:
         if row['name'] == name:
             counter +=1
@@ -43,6 +40,9 @@ def total_orders_per_customer():
         print("Unfortunately, name not found")  
         print("Concluding program execution...")
         file.close()
+    
+
+total_orders_per_customer()
 
             
         

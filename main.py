@@ -7,7 +7,7 @@ from menus import manager_menu,delivery_menu,clerk_menu
 from manager import total_orders_per_customer,total_daily_orders,total_delivered_orders,total_income_per_customer,\
 total_daily_income
 from main_fuctions import login,is_valid
-from delivery import CompleteDelivery
+#from delivery import CompleteDelivery
 
 
 
