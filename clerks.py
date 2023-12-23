@@ -13,13 +13,13 @@ def new_orders():
     desc=input("Description: ")
     cost=(input("Customer's cost: "))
     date=(input("Date (DD/MM/YY): "))
-    file=open("orders.csv")
+    file=open("orders.csv", newline='')
     reader=csv.DictReader(file)
     orders_list=list(reader)
     id=len(orders_list)+1
     file.close()
     file = open("orders.csv",'a', newline='\n')
-    file.write(str(id)+','+name+','+address+','+desc+','+date+','+cost+','+'0'','+clerk)
+    file.write(str(id)+','+name+','+address+','+desc+','+date+','+cost+','+'0'','+clerk+'\n')
     print("The addition of a new order has been successfully finalized.")
     file.close()    
     

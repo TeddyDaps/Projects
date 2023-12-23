@@ -1,26 +1,25 @@
 
 import csv # Importing the csv module for handling CSV files
+
  
 
 def total_orders_per_customer(): 
-
-    file=open('orders.csv' 'r') # Open the proper .csv file (in read mode BY DEFAULT)
-    reader=csv.DictReader(file)
+    file=open('orders.csv') # Open the proper .csv file (in read mode BY DEFAULT)
+    read=csv.DictReader(file)
     counter = 0
     orders=[] # Creating a new list so we can add the orders inside 
-    name=str.lower(input("Enter customer's name: ")) # Asking for customer's name input:
-    for row in reader:
-        if row['name'] == name:
+    customer=str.lower(input("Enter customer's name: ")) # Asking for customer's name input:
+    for row in read:
+        if row['name'] == customer:
             counter +=1
             orders.append(row)  # Adding the orders per customer in a new list
+            #print(row)
     
-    if name in reader:
-        print(f"{name} has ordered {counter} times") # Displaying proper message to the user
+    if counter > 0:
+        print(f"{customer} has ordered {counter} times") # Displaying proper message to the user
         answer=str.lower(input("Would you like to check them? Y/N: ")) # Waiting for user's input (asnwer)
-    
-
-    if name not in reader:
-        answer = 'n'
+    else:
+        answer='n'
 
     """
     Displaying the individual orders belonging to a customer sequentially.
@@ -39,10 +38,10 @@ def total_orders_per_customer():
     elif answer == 'n':
         print("Unfortunately, name not found")  
         print("Concluding program execution...")
-        file.close()
+    file.close()
+        
     
 
-total_orders_per_customer()
 
             
         
@@ -169,7 +168,11 @@ def total_daily_income():
 
 
 def extracting_names():
- pass
+    pass
+
+
+            
+
 
     
 
