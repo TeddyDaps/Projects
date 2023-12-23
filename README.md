@@ -1,38 +1,3 @@
 # "SWE4001 - Introduction to Software Development"
-"A café wants to track the orders it receives for home delivery over the phone.
 
-The café has a number of employees who will be using the system:
-
-Clerks: They enter orders and check for pending orders.
-Delivery: They deliver the orders and update the system upon order completion.
-Manager: They view summary reports and statistics.
-Each employee has an account for system use (username/password), and the system must recognize their respective roles.
-
-For each order, each clerk can enter into the system:
-
-Customer's name
-Customer's address
-Description (contents of the order)
-Date (format: DDMMYY)
-Total order amount
-The system assigns an automatically incremented ID code for each new order.
-
-Each clerk can input orders in bulk from a properly formatted file (txt or csv).
-
-Each clerk can also view orders that have not been delivered.
-
-After delivering an order, the delivery employee updates it as completed.
-
-Managers can select functions such as:
-
-Number of orders from a specific customer
-Number of orders on a given day
-Total number of delivered orders
-Total amount of orders from a specific customer
-Total amount of orders on a given day
-
-Managers can also request data export into a file (csv format) for the following:
-Customer names
-Number of orders entered by each clerk
-All orders that have been registered
-Total order amount per day.
+Python is a versatile and high-level programming language renowned for its simplicity and readability. Developed by Guido van Rossum, Python emphasizes code readability and efficiency, making it a popular choice for beginners and seasoned developers alike. Its clear and expressive syntax allows developers to write fewer lines of code compared to other languages, fostering rapid development and easy maintenance. Python's extensive standard library offers a wide range of modules and tools, empowering users to handle diverse tasks, from web development and data analysis to artificial intelligence and scientific computing. Its versatility and community support have established Python as a go-to language for various applications across different domains.
