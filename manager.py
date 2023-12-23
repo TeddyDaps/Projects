@@ -168,7 +168,41 @@ def total_daily_income():
 
 
 def extracting_names():
-    pass
+    
+
+    answer=str.lower(input("Would you kindly assist in the extraction of the names from the order list, using a formal approach? Y/N: ")) #Proper message for the user
+
+    if answer == 'y': # Checking the answer
+
+
+
+        input_file = 'orders.csv'  # Path to the original CSV file
+
+        # Path to the new TXT file where the names will be extracted
+        output_file = 'clients.txt'
+
+        
+        unique_names = set() #IMPORTANT!!: Set to store unique names in order to insert names only 1 time each
+
+        
+        with open(input_file, 'r', newline='') as infile: # Open the original CSV file and extract names from the 'name' column
+            reader = csv.DictReader(infile)
+            for row in reader:
+                unique_names.add(row['name'])
+
+        
+        with open(output_file, 'w', newline='') as outfile:
+            writer = csv.writer(outfile) # Write names to the new TXT file
+
+            # Write unique names to the 'clients.txt' file
+            for name in sorted(unique_names):  # Sorting the names alphabetically (optional)
+                writer.writerow([name])
+
+        
+        print("The process of extracting unique names to 'clients.txt' has finished.") # Print completion message
+
+
+extracting_names()
 
 
             
