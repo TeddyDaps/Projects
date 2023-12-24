@@ -7,6 +7,7 @@ from menus import manager_menu,delivery_menu,clerk_menu
 from manager import total_orders_per_customer,total_daily_orders,total_delivered_orders,total_income_per_customer,\
 total_daily_income, extracting_names, extract_order_each_cleck, extract_all_orders
 from main_fuctions import login,is_valid
+from delivery import CompleteDelivery
 
 
 
@@ -77,9 +78,7 @@ while login_attempts < max_attempts:
                 if role == 'delivery':
                     choice = delivery_menu()
                     if choice == '1':
-                        pass
-                        
-                        #CompleteDelivery()
+                        CompleteDelivery()
                     elif choice == '2':
                         undelivered_orders()
                         
