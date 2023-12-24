@@ -75,17 +75,17 @@ while login_attempts < max_attempts:
                     if choice == '0':
                         print("Concluding the program respectfully.") # Displaying proper message
                         break
-                if role == 'delivery':
+                if role == 'delivery': # Delivery's role
                     choice = delivery_menu()
-                    if choice == '1':
+                    if choice == '1': # Choice 1 Update status of a specific order
                         CompleteDelivery()
-                    elif choice == '2':
+                    elif choice == '2': # Choice 2 See undelivered orders
                         undelivered_orders()
                         
                         
                         
                     elif choice == '0':
-                        print("Concluding the program respectfully.")
+                        print("Concluding the program respectfully.") # Exiting Program
                         break
 
         

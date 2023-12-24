@@ -8,7 +8,7 @@ def CompleteDelivery():
         reader = csv.DictReader(file) # Read the CSV file and store the data in a list of dictionaries
         rows = list(reader)
 
-        id=input("Give ID: ") # Ask for input 
+        id=input("Give ID: ") # Ask for input ID
 
         
         for row in rows:
