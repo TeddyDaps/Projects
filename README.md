@@ -13,6 +13,7 @@ Here are the games included in this repository:
 1. Quiz Game
 2. Connect Four
 3. Tetris
+4. BlackJack
 
 
 
