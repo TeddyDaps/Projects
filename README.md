@@ -11,12 +11,10 @@ This repository contains analyses of various games implemented in Python. Each g
 ## Games
 Here are the games included in this repository:
 1. Quiz Game
-2. Hangman
-3. Connect Four
-4. Snake
-5. Tetris
-6. Blackjack
-7. Minesweeper
+2. Connect Four
+3. Tetris
+
+
 
 ## Analysis
 Each game includes a detailed analysis covering the following aspects:
