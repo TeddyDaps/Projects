@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import tkinter as tk
 from tkinter import messagebox, ttk
 import mysql.connector
@@ -220,3 +221,4 @@ tk.Label(help_frame, text="Space Bar: Rotate", font=("Helvetica", 12)).pack(pady
 
 # Run the application
 root.mainloop()
+
